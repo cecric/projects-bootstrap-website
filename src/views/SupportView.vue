@@ -4,7 +4,7 @@
       <h1 class="text-4xl font-bold mb-6 text-olive-700">Support</h1>
       <p class="text-slate-600 mb-8">
         If you have any questions or need assistance, please don't hesitate to contact us.
-        <a href="mailto:support@jeannot.app" class="text-[#7c8c64]">support@jeannot.app</a>
+        <a href="mailto:support@jeannot.app" class="text-[#7c9082] hover:text-[#647667] underline-offset-2 hover:underline">support@jeannot.app</a>
       </p>
       <h2 class="text-3xl font-bold mb-6 text-olive-700">Jeannot – FAQ</h2>
 

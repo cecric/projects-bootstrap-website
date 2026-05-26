@@ -1,11 +1,86 @@
 @import 'tailwindcss';
 
+/* Satoshi (display) — Fontshare CDN */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&display=swap');
+
 :root {
-  --color-primary: #7c8c64;
-  --color-primary-dark: #6a7854;
-  --color-background: #f8f5ed;
+  /* Jeannot 2.0 — Earth & plant palette */
+  --color-primary: #7c9082;
+  --color-primary-dark: #647667;
+  --color-primary-soft: #a5b2a3;
+  --color-secondary: #ced4bf;
+  --color-accent: #bfc9bb;
+  --color-surface: #eef0e6;
+  --color-background: #f6f5ee;
+  --color-ink: #2f3a32;
+  --color-ink-soft: #5a6359;
+  --color-leaf: #2e7d32;
+  --color-root: #d87943;
+  --color-flower: #c59cff;
+  --color-fruit: #a84370;
+  --color-error: #c73e3a;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Satoshi', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Display utility for hero/section headings */
+.font-display {
+  font-family: 'Satoshi', 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Gentle ease curves echoing the app's "ease-fluid / ease-snappy" motion tokens */
+.ease-fluid { transition-timing-function: cubic-bezier(0.3, 0, 0, 1); }
+.ease-snappy { transition-timing-function: cubic-bezier(0.2, 0, 0, 1); }
+
+/* Subtle grain / texture overlay used in identity section */
+.bg-grain {
+  background-image:
+    radial-gradient(rgba(124, 144, 130, 0.08) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* Sticky mobile download bar — keeps CTA visible at all times on small screens */
+.mobile-cta-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  background-color: rgba(246, 245, 238, 0.92);
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  border-top: 1px solid rgba(124, 144, 130, 0.18);
+}
+
+/* Keep content from being hidden under the fixed mobile CTA */
+@media (max-width: 767px) {
+  body { padding-bottom: 84px; }
+}
+
+/* Locale dropdown — soft pill look */
+.locale-changer select {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(124, 144, 130, 0.25);
+  color: var(--color-ink);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  appearance: none;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.3, 0, 0, 1);
+}
+.locale-changer select:hover {
+  border-color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.9);
 }
