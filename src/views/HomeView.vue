@@ -10,6 +10,18 @@ type WhatsNewItem = { title: string; description: string };
 const heroPills = computed(() => tm('home.heroPills') as string[]);
 const features = computed(() => tm('home.features.list') as FeatureItem[]);
 const whatsNew = computed(() => tm('home.whatsNew.items') as WhatsNewItem[]);
+
+const indexPosition = computed(() => {
+  return {
+    '0': 'object-[0_45%]',
+    '1': 'object-bottom',
+    '2': 'object-[0_20%]',
+    '3': 'object-center',
+    '4': 'object-[0_25%]',
+    '5': 'object-[0_10%]',
+  };
+});
+
 </script>
 
 <template>
@@ -254,7 +266,8 @@ const whatsNew = computed(() => tm('home.whatsNew.items') as WhatsNewItem[]);
               <div class="aspect-video rounded-xl overflow-hidden ring-1 transition-shadow duration-300"
                 style="--tw-ring-color: rgba(124,144,130,0.15); background-color: var(--color-surface);">
                 <img :src="`/assets/${locale}/screenshots/screenshot-${i}.jpg`" :alt="feature.title"
-                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-fluid"
+                  :class="indexPosition[String(i) as '0' | '1' | '2' | '3' | '4' | '5'] || 'object-center'"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-fluid"
                   loading="lazy" />
               </div>
             </div>
