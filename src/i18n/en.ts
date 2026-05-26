@@ -3,7 +3,7 @@ import type { i18nMessages } from './lang';
 export const en: i18nMessages = {
   nav: {
     features: 'Features',
-    whatsNew: "What's new",
+    whatsNew: 'Highlights',
     identity: 'Identity',
     download: 'Download',
     support: 'Support',
@@ -26,12 +26,12 @@ export const en: i18nMessages = {
     cookiePolicy: 'Cookie Policy',
   },
   home: {
-    versionBadge: 'New · Jeannot 2.0',
+    tagline: 'Available on iOS & Android',
     title: 'Grow in rhythm with the moon.',
     description:
-      'A softer, nature-inspired design, a dedicated My Garden hub to track every plant, and an AI assistant always within reach.',
+      'A calm, nature-inspired garden companion: track every plant, plan by the moon and get personalised advice from an AI assistant always within reach.',
     download: 'Download Now',
-    learnMore: 'Explore what’s new',
+    learnMore: 'Explore the features',
     heroPills: [
       'My Garden hub',
       'Jeannot AI',
@@ -41,47 +41,47 @@ export const en: i18nMessages = {
       'FR / EN',
     ],
     whatsNew: {
-      eyebrow: "What's new in 2.0",
-      title: 'A calmer, more useful Jeannot.',
+      eyebrow: 'Made for daily life',
+      title: 'Small touches that make every day in the garden easier.',
       description:
-        'Version 2.0 marks a shift toward a more natural, calm and cohesive identity — designed for daily use in the garden. Patch versions 2.0.1 → 2.0.4 bring fast-follow improvements to weather, onboarding and My Garden.',
+        'From your morning glance at the garden to picking the perfect day to sow — Jeannot quietly handles the details so you can stay outside.',
       items: [
         {
-          title: 'Today home screen',
+          title: 'Today at a glance',
           description:
-            'A carousel of today’s tasks and activities — plus integrated frost, wind and rain alerts on your daily forecast.',
+            'Open the app and see today’s tasks, activities and weather alerts — frost, wind and rain — in one calm view.',
         },
         {
-          title: 'Guided 5-step onboarding',
+          title: 'Set up in five gentle steps',
           description:
-            'Create your garden, see the current moon phase, pick a first plant and get a personal welcome from Jeannot.',
+            'Create your garden, see today’s moon phase, pick a first plant and get a personal welcome from Jeannot.',
         },
         {
-          title: 'Add plants in a flow',
+          title: 'Add a plant in a flow',
           description:
-            'Multi-step form to pick a variety, set its current stage and add notes. The encyclopedia tells you what’s already in your garden.',
+            'Pick a variety, set its current stage and add notes. The encyclopedia tells you what’s already in your garden.',
         },
         {
-          title: 'Activity planning',
+          title: 'Plan with the moon',
           description:
-            'Search activities with infinite scroll, schedule them from the recommended days of the lunar calendar, and track progress.',
+            'Browse activities and schedule them straight from the recommended days of the lunar calendar — every task lands on the right day.',
         },
         {
-          title: 'My Garden, polished',
+          title: 'A garden you actually keep track of',
           description:
-            'Pagination, search with auto-focus, filters and sorting with icons, edit & remove with confirmation, and tooltips for stage end dates.',
+            'Search, filter and sort your plants by species, stage or date. Edit, remove and tooltips for stage end dates — without leaving the list.',
         },
         {
-          title: 'Polished AI assistant',
+          title: 'Jeannot, one tap away',
           description:
-            'Better loading states while Jeannot is thinking, and translated suggested questions in EN and FR.',
+            'Open the AI assistant from any screen, ask anything about your garden, and identify plants or diseases from a photo.',
         },
       ],
     },
     features: {
-      title: 'Everything your garden needs, one calm app.',
+      title: 'Everything your garden needs, in one calm app.',
       description:
-        'Track every plant, plan by the moon and get personalised advice — all without leaving the app.',
+        'Track every plant, plan by the moon and get personalised advice — all in one place.',
       list: [
         {
           eyebrow: 'My Garden',
@@ -118,61 +118,6 @@ export const en: i18nMessages = {
           title: 'Tasks that fit your week',
           description:
             'A calendar view with overdue alerts, quick actions, and rich completion (notes, quantity, custom date). Alerts grouped and labelled by day.',
-        },
-      ],
-    },
-    identity: {
-      eyebrow: 'Visual identity',
-      title: 'From pastel to earth & plant.',
-      description:
-        'Jeannot 2.0 moves from a candy palette to a mature, organic one — with clearer semantic meaning for lunar and biodynamic cycle colours.',
-      beforeLabel: 'Before · v1.x',
-      afterLabel: 'After · v2.0+',
-      typography: 'Satoshi',
-      typographyDescription: 'Confirmed as the display font across the app.',
-      iconsLabel: 'Phosphor Icons',
-      iconsDescription:
-        'Adopted app-wide — navigation, alerts, onboarding, weather, everywhere.',
-      motionLabel: 'Natural motion',
-      motionDescription:
-        '“Ease-fluid” and “ease-snappy” curves for transitions that feel alive.',
-      semantics: {
-        title: 'Semantic plant colours',
-        description:
-          'Cycle colours now mean something at a glance — leaf, root, flower, fruit.',
-        items: [
-          { name: 'Leaf', hint: 'Leaf vegetables' },
-          { name: 'Root', hint: 'Root vegetables' },
-          { name: 'Flower', hint: 'Flowering & aromatics' },
-          { name: 'Fruit', hint: 'Fruits & harvests' },
-        ],
-      },
-    },
-    onboarding: {
-      eyebrow: 'Onboarding',
-      title: 'Up and running in five gentle steps.',
-      description:
-        'A redesigned guided flow that gets your garden ready — with a personal welcome from Jeannot at the end.',
-      steps: [
-        {
-          title: 'Create your garden',
-          description: 'Pick a name and a location to anchor everything to your climate.',
-        },
-        {
-          title: 'See the moon',
-          description: 'The current phase and the lunar influence on your garden, explained.',
-        },
-        {
-          title: 'Pick a first plant',
-          description: 'Browse the full encyclopedia with infinite search.',
-        },
-        {
-          title: 'A personal welcome',
-          description: 'Jeannot greets you with a summary based on your first plant.',
-        },
-        {
-          title: 'Subscribe & grow',
-          description: 'Activate Jeannot and start your first season in rhythm with the moon.',
         },
       ],
     },

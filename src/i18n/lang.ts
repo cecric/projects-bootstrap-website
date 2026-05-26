@@ -23,7 +23,7 @@ export type i18nMessages = {
     cookiePolicy: string;
   };
   home: {
-    versionBadge: string;
+    tagline: string;
     title: string;
     description: string;
     download: string;
@@ -45,36 +45,6 @@ export type i18nMessages = {
         title: string;
         description: string;
         eyebrow: string;
-      }[];
-    };
-    identity: {
-      eyebrow: string;
-      title: string;
-      description: string;
-      beforeLabel: string;
-      afterLabel: string;
-      typography: string;
-      typographyDescription: string;
-      iconsLabel: string;
-      iconsDescription: string;
-      motionLabel: string;
-      motionDescription: string;
-      semantics: {
-        title: string;
-        description: string;
-        items: {
-          name: string;
-          hint: string;
-        }[];
-      };
-    };
-    onboarding: {
-      eyebrow: string;
-      title: string;
-      description: string;
-      steps: {
-        title: string;
-        description: string;
       }[];
     };
     bilingual: {

@@ -14,7 +14,6 @@ const toUppercase = (locale: string) => locale.toUpperCase();
         <a href="/" class="flex items-center group">
           <img src="/assets/icon-only.png" alt="Jeannot Logo" class="h-10 w-auto transition-transform duration-300 ease-fluid group-hover:rotate-[-4deg]" />
           <span class="ml-3 text-xl md:text-2xl font-semibold font-display tracking-tight" style="color: var(--color-ink);">Jeannot</span>
-          <span class="ml-2 hidden sm:inline-flex items-center text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-full" style="background-color: var(--color-secondary); color: var(--color-primary-dark);">v2.0</span>
         </a>
 
         <div class="hidden md:flex items-center space-x-7">
@@ -124,7 +123,7 @@ const toUppercase = (locale: string) => locale.toUpperCase();
             &copy; {{ new Date().getFullYear() }} Jeannot. Gaiadet SAS — {{ $t('footer.allRightsReserved') }}.
           </p>
           <p class="text-xs mt-2 md:mt-0" style="color: #a8b0a5;">
-            Made with care for gardeners · v2.0
+            Made with care for gardeners.
           </p>
         </div>
       </div>

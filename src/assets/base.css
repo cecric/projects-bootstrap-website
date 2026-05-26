@@ -4,7 +4,7 @@
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&display=swap');
 
 :root {
-  /* Jeannot 2.0 — Earth & plant palette */
+  /* Jeannot — Earth & plant palette */
   --color-primary: #7c9082;
   --color-primary-dark: #647667;
   --color-primary-soft: #a5b2a3;

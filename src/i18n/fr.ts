@@ -3,7 +3,7 @@ import type { i18nMessages } from './lang';
 export const fr: i18nMessages = {
   nav: {
     features: 'Fonctionnalités',
-    whatsNew: 'Nouveautés',
+    whatsNew: 'À la une',
     identity: 'Identité',
     download: 'Télécharger',
     support: 'Support',
@@ -26,12 +26,12 @@ export const fr: i18nMessages = {
     cookiePolicy: 'Politique des cookies',
   },
   home: {
-    versionBadge: 'Nouveau · Jeannot 2.0',
+    tagline: 'Disponible sur iOS et Android',
     title: 'Jardinez au rythme de la lune.',
     description:
-      'Un design plus doux et inspiré par la nature, un espace Mon Jardin pour suivre chaque plante, et un assistant IA toujours à portée de main.',
+      'Un compagnon de jardinage calme et inspiré par la nature : suivez chaque plante, planifiez avec la lune et profitez d’un assistant IA toujours à portée de main.',
     download: 'Télécharger',
-    learnMore: 'Découvrir les nouveautés',
+    learnMore: 'Découvrir les fonctionnalités',
     heroPills: [
       'Mon Jardin',
       'Assistant IA',
@@ -41,47 +41,47 @@ export const fr: i18nMessages = {
       'FR / EN',
     ],
     whatsNew: {
-      eyebrow: 'Nouveautés 2.0',
-      title: 'Un Jeannot plus calme, plus utile.',
+      eyebrow: 'Pensé pour le quotidien',
+      title: 'De petites attentions qui changent chaque journée au jardin.',
       description:
-        'La version 2.0 marque un virage vers une identité plus naturelle, calme et cohérente — pensée pour le quotidien au jardin. Les versions 2.0.1 → 2.0.4 apportent rapidement des améliorations sur la météo, l’onboarding et Mon Jardin.',
+        'Du coup d’œil du matin au choix du meilleur jour pour semer — Jeannot s’occupe discrètement des détails pour vous laisser dehors.',
       items: [
         {
-          title: 'Écran d’accueil « Aujourd’hui »',
+          title: 'Le jardin du jour',
           description:
-            'Un carrousel des tâches et activités du jour, et des alertes gel, vent et pluie intégrées à votre météo quotidienne.',
+            'Ouvrez l’app et retrouvez d’un coup d’œil les tâches, activités et alertes météo du jour — gel, vent et pluie.',
         },
         {
-          title: 'Onboarding guidé en 5 étapes',
+          title: 'Prêt en cinq étapes douces',
           description:
-            'Créez votre jardin, découvrez la phase lunaire actuelle, choisissez une première plante et recevez un mot de bienvenue de Jeannot.',
+            'Créez votre jardin, découvrez la phase lunaire du jour, choisissez une première plante et recevez un mot de Jeannot.',
         },
         {
-          title: 'Ajouter des plantes en un flux',
+          title: 'Ajoutez une plante en quelques tapes',
           description:
-            'Un formulaire multi-étapes : choix de la variété, stade actuel et notes. L’encyclopédie vous indique ce qui est déjà dans votre jardin.',
+            'Choisissez la variété, indiquez son stade et ajoutez des notes. L’encyclopédie vous indique ce qui est déjà dans votre jardin.',
         },
         {
-          title: 'Planification d’activités',
+          title: 'Planifiez avec la lune',
           description:
-            'Recherche d’activités en scroll infini, planification depuis les jours recommandés du calendrier lunaire, et suivi de progression.',
+            'Parcourez les activités et planifiez-les directement depuis les jours recommandés du calendrier lunaire — chaque tâche tombe au bon moment.',
         },
         {
-          title: 'Mon Jardin, peaufiné',
+          title: 'Un jardin vraiment suivi',
           description:
-            'Pagination, recherche avec focus auto, filtres et tris avec icônes, édition & suppression avec confirmation, info-bulles sur les fins de stade.',
+            'Recherchez, filtrez et triez vos plantes par espèce, stade ou date. Édition, suppression et info-bulles sur les fins de stade — sans quitter la liste.',
         },
         {
-          title: 'Assistant IA plus fluide',
+          title: 'Jeannot, à un tap',
           description:
-            'De meilleurs états de chargement quand Jeannot réfléchit, et des questions suggérées traduites en EN et FR.',
+            'Ouvrez l’assistant IA depuis n’importe quel écran, posez vos questions et identifiez plantes et maladies par photo.',
         },
       ],
     },
     features: {
       title: 'Tout ce qu’il faut au jardin, dans une seule app.',
       description:
-        'Suivez chaque plante, planifiez avec la lune et recevez des conseils personnalisés — sans jamais quitter l’app.',
+        'Suivez chaque plante, planifiez avec la lune et recevez des conseils personnalisés — au même endroit.',
       list: [
         {
           eyebrow: 'Mon Jardin',
@@ -118,61 +118,6 @@ export const fr: i18nMessages = {
           title: 'Des tâches au rythme de votre semaine',
           description:
             'Vue calendrier avec alertes de retard, actions rapides et finalisation enrichie (notes, quantité, date personnalisée). Alertes groupées et étiquetées par jour.',
-        },
-      ],
-    },
-    identity: {
-      eyebrow: 'Identité visuelle',
-      title: 'Des pastels à la palette « terre & plantes ».',
-      description:
-        'Jeannot 2.0 quitte une palette « bonbon » pour une palette plus mature et organique — avec une signification claire pour les couleurs des cycles lunaires et biodynamiques.',
-      beforeLabel: 'Avant · v1.x',
-      afterLabel: 'Après · v2.0+',
-      typography: 'Satoshi',
-      typographyDescription: 'Confirmée comme police d’affichage dans toute l’app.',
-      iconsLabel: 'Phosphor Icons',
-      iconsDescription:
-        'Adoptées partout — navigation, alertes, onboarding, météo.',
-      motionLabel: 'Mouvement naturel',
-      motionDescription:
-        'Courbes « ease-fluid » et « ease-snappy » pour des transitions plus vivantes.',
-      semantics: {
-        title: 'Couleurs sémantiques des plantes',
-        description:
-          'Les couleurs des cycles veulent désormais dire quelque chose — feuille, racine, fleur, fruit.',
-        items: [
-          { name: 'Feuille', hint: 'Légumes-feuilles' },
-          { name: 'Racine', hint: 'Légumes-racines' },
-          { name: 'Fleur', hint: 'Fleurs & aromatiques' },
-          { name: 'Fruit', hint: 'Fruits & récoltes' },
-        ],
-      },
-    },
-    onboarding: {
-      eyebrow: 'Onboarding',
-      title: 'Prêt à jardiner en cinq étapes douces.',
-      description:
-        'Un parcours guidé repensé qui prépare votre jardin — et se termine par un message personnalisé de Jeannot.',
-      steps: [
-        {
-          title: 'Créez votre jardin',
-          description: 'Un nom et une localisation pour caler tout le reste sur votre climat.',
-        },
-        {
-          title: 'Découvrez la lune',
-          description: 'La phase actuelle et son influence sur votre jardin, expliquées.',
-        },
-        {
-          title: 'Choisissez une première plante',
-          description: 'Parcourez toute l’encyclopédie avec une recherche infinie.',
-        },
-        {
-          title: 'Un mot personnalisé',
-          description: 'Jeannot vous accueille avec un résumé basé sur votre première plante.',
-        },
-        {
-          title: 'Abonnez-vous & lancez la saison',
-          description: 'Activez Jeannot et démarrez votre première saison au rythme de la lune.',
         },
       ],
     },
