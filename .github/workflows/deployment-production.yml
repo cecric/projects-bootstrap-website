@@ -73,3 +73,8 @@ jobs:
           password: ${{ secrets.SSH_MAIN_SERVER_PWD }}
           port: ${{ vars.MAIN_SERVER_SOCKET }}
           script: sudo /home/cicd/reload-containers.sh
+      - name: Clean up build artifacts
+        if: always()
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: project_pre
